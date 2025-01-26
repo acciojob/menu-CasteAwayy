@@ -1,12 +1,51 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+.menu {
+  font-family: sans-serif;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.heading {
+  text-align: center;
+}
+
+.categories_list {
+  list-style-type: none;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_item {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.list_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.item {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.item_img {
+  width: 12rem;
+  height: 100%;
+  object-fit: cover;
+  grid-row: 1 / span 2;
+}
+.right_sec {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid gray;
+}
+.item_desc {
+  align-self: flex-start;
 }
