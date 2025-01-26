@@ -87,7 +87,7 @@ export default function App() {
     setSortBy(e.target.textContent.toLowerCase());
   }
   return (
-    <div className="menu">
+    <div id="main" className="menu">
       <h1 className="heading">Our Menu</h1>
       <CategoriesList onCategoryClick={handleClick} />
       <div className="list_items">
@@ -110,13 +110,13 @@ function CategoriesList({ onCategoryClick }) {
         <li className="list_item" onClick={onCategoryClick}>
           All
         </li>
-        <li className="list_item" onClick={onCategoryClick}>
+        <li id="filter-btn-1" className="list_item" onClick={onCategoryClick}>
           Breakfast
         </li>
-        <li className="list_item" onClick={onCategoryClick}>
+        <li id="filter-btn-2" className="list_item" onClick={onCategoryClick}>
           Lunch
         </li>
-        <li className="list_item" onClick={onCategoryClick}>
+        <li id="filter-btn-3" className="list_item" onClick={onCategoryClick}>
           Shakes
         </li>
       </ul>
