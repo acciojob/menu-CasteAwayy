@@ -2,7 +2,6 @@ import { useState } from "react";
 import React from "react";
 import './../styles/styles.css';
 
-
 const data = [
   {
     id: 1,
@@ -111,25 +110,13 @@ function CategoriesList({ onCategoryClick }) {
         <li className="list_item" onClick={onCategoryClick}>
           All
         </li>
-        <li
-          id="filter-btn-1"
-          className="list_item"
-          onClick={onCategoryClick}
-        >
+        <li id="filter-btn-1" className="list_item" onClick={onCategoryClick}>
           Breakfast
         </li>
-        <li
-          id="filter-btn-2"
-          className="list_item"
-          onClick={onCategoryClick}
-        >
+        <li id="filter-btn-2" className="list_item" onClick={onCategoryClick}>
           Lunch
         </li>
-        <li
-          id="filter-btn-3"
-          className="list_item"
-          onClick={onCategoryClick}
-        >
+        <li id="filter-btn-3" className="list_item" onClick={onCategoryClick}>
           Shakes
         </li>
       </ul>
@@ -139,7 +126,7 @@ function CategoriesList({ onCategoryClick }) {
 
 function Item({ item }) {
   return (
-    <div className="item">
+    <div className="item" data-test-id={`menu-item-${item.category}`}>
       <img className="item_img" src={item.img} alt="image" />
       <div className="right_sec">
         <span className="item_title">{item.title}</span>
@@ -149,4 +136,5 @@ function Item({ item }) {
     </div>
   );
 }
+
 
