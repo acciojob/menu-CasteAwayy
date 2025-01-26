@@ -113,7 +113,6 @@ function CategoriesList({ onCategoryClick }) {
         </li>
         <li
           id="filter-btn-1"
-          data-test-id="menu-item-breakfast"
           className="list_item"
           onClick={onCategoryClick}
         >
@@ -121,7 +120,6 @@ function CategoriesList({ onCategoryClick }) {
         </li>
         <li
           id="filter-btn-2"
-          data-test-id="menu-item-lunch"
           className="list_item"
           onClick={onCategoryClick}
         >
@@ -129,7 +127,6 @@ function CategoriesList({ onCategoryClick }) {
         </li>
         <li
           id="filter-btn-3"
-          data-test-id="menu-item-shakes"
           className="list_item"
           onClick={onCategoryClick}
         >
